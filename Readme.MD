@@ -6,7 +6,7 @@ for windows first step will remain the same python -m venv "name" to activate so
 
 -- let's commit git commit -m "v1"
 
--- git remote add origin https://github.com/mujeebr/fs_rag_17_dec.git
+-- git remote add origin 
 
 -- git branch -M main
 
