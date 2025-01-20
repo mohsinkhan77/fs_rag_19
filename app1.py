@@ -7,19 +7,18 @@ from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
-st.title("IPO Rag based chatbot")
+st.title("FSA Rag based chatbot")
 st.sidebar.header("Configuration related to OpenAI")
 api_key = st.sidebar.text_input("OpenAI Key Required", type="password")
 
-st.header("Please ask any query related to IPO's website")
+st.header("Please ask any query related to FSA's website")
 question = st.text_input("Enter your question")
 
 if api_key:
     try:
         # Load the urls and process data
-        # URLs=["https://www.odinschool.com"]
-        #URLs=["https://fullstackacademy.in"]
-        URLs=["https://ipowatch.in/"]
+        # URLs=["https://www.odinschool.com]
+        URLs=["https://fullstackacademy.in"]
         loaders = UnstructuredURLLoader(urls=URLs)
         # loaders = PyPDFDirectoryLoader("pdfs")
         data = loaders.load()
